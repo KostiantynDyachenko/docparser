@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Nova Oval";
+  src: local("Nova Oval"),
+  url("./fonts/NovaOval-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+  inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.react-resizable {
+  position: relative;
+}
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+');
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+}
+.react-resizable-handle-sw {
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+  transform: rotate(90deg);
+}
+.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+.react-resizable-handle-nw {
+  top: 0;
+  left: 0;
+  cursor: nw-resize;
+  transform: rotate(180deg);
+}
+.react-resizable-handle-ne {
+  top: 0;
+  right: 0;
+  cursor: ne-resize;
+  transform: rotate(270deg);
+}
+.react-resizable-handle-w,
+.react-resizable-handle-e {
+  top: 50%;
+  margin-top: -10px;
+  cursor: ew-resize;
+}
+.react-resizable-handle-w {
+  left: 0;
+  transform: rotate(135deg);
+}
+.react-resizable-handle-e {
+  right: 0;
+  transform: rotate(315deg);
+}
+.react-resizable-handle-n,
+.react-resizable-handle-s {
+  left: 50%;
+  margin-left: -10px;
+  cursor: ns-resize;
+}
+.react-resizable-handle-n {
+  top: 0;
+  transform: rotate(225deg);
+}
+.react-resizable-handle-s {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.ce-toolbar__inline-btn {
+  /*background: #eff2f5;*/
+  /*color: #707684;*/
+  background: #000;
+  color: #dedede;
+}
+
+.ce-toolbar__inline-btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.ce-custom-toolbar {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  z-index: 2;
+  padding: 4px 6px;
+}
+
+@media (hover: none) {
+  .MuiTreeItem-label:hover {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+  }
+}
+
+@media (hover: none) {
+  .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label:hover, .MuiTreeItem-root.Mui-selected:focus > .MuiTreeItem-content .MuiTreeItem-label {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+  }
+}
+
+.TreeItem-selected > .MuiTreeItem-content > .MuiTreeItem-label.MuiTypography-root {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.k-master-row.k-state-selected {
+  background-color: #81dbba !important;
+  font-weight: 500;
+}
+
+.k-link.k-state-selected {
+  background-color: #208d68 !important;
+  color: white !important;
+}
+
+.k-checkbox:checked {
+  border: none !important;
+  background-color: #208d68 !important;
+}
+
+.k-option {
+  background-color: #81dbba !important;
+}
+
+.MuiToggleButton-root.Mui-selected {
+  background-color: #9ebda2 !important;
+  color: black !important;
+}

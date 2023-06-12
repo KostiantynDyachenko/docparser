@@ -1,0 +1,1 @@
+export { createSentences } from './createSentences';

@@ -1,0 +1,23 @@
+.editor-date-time {
+    position: absolute;
+    width: 154px;
+    left: -154px;
+    top: 8px;
+    font-size: 10.5px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.editor-date-time.small {
+    position: relative;
+    left: -32px;
+    top: 4px;
+}
+
+@media (max-width: 1280px) {
+    .editor-date-time {
+        position: relative;
+        left: -32px;
+        top: 4px;
+    }
+}
